@@ -1,0 +1,400 @@
+.fullscreen {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 350px;
+    background-color: #6756ff;
+    background: linear-gradient(to left top, #6756ff, #7162ff);
+
+    .fullscreen-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .offer {
+        h1, p {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        p {
+            color: #ccc;
+        }
+    }
+
+    .fullscreen-img {
+        min-width: 700px;
+        max-width: 700px;
+        margin-left: 60px;
+        position: relative;
+
+        img {
+            border-radius: 15px;
+            box-shadow: 0 0 1rem #00000073;
+        }
+
+        img:nth-child(1) {
+            width: 100%;
+        }
+
+        img:nth-child(2) {
+            width: 80%;
+            position: absolute;
+            top: 30%;
+            right: -10%;
+        }
+    }
+}
+
+@keyframes wavesMove {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    min-height: 100px;
+    max-height: 150px;
+    bottom: 0;
+    left: 0;
+
+    .parallax {
+        &>use {
+            animation: wavesMove 25s cubic-bezier(.55, .5, .45, .5) infinite;
+
+            &:nth-child(1) {
+                animation-delay: -2s;
+                animation-duration: 7s;
+            }
+
+            &:nth-child(2) {
+                animation-delay: -3s;
+                animation-duration: 10s;
+            }
+
+            &:nth-child(3) {
+                animation-delay: -4s;
+                animation-duration: 13s;
+            }
+
+            &:nth-child(4) {
+                animation-delay: -5s;
+                animation-duration: 20s;
+            }
+        }
+    }
+}
+
+.actual {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+
+    .actual-img {
+        min-width: 600px;
+        max-width: 600px;
+        margin-right: 60px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .actual-text {
+        h1, p {
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #696969;
+        }
+    }
+}
+
+.about-learning {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+
+    .learning-img {
+        min-width: 600px;
+        max-width: 600px;
+        margin-left: 60px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .learning-text {
+        h1, p {
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #696969;
+        }
+    }
+}
+
+.forfree {
+    font-size: 64px;
+    display: flex;
+    text-wrap: nowrap;
+    transform: translateX(-40px);
+    margin-top: 200px;
+
+    h1 {
+        padding-right: 30px;
+        background-color: #6756ff;
+        color: #d0cbff;
+    }
+}
+
+.stack {
+    display: flex;
+    justify-content: left;
+    padding-top: 200px;
+
+    .techs {
+        width: 475px;
+        margin-right: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        img {
+            height: 75px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 60px;
+        }
+    }
+
+    .stack-text {
+        max-width: 600px;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+
+    .team-adven {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    h1, p {
+        margin-bottom: 20px;
+    }
+
+    p {
+        user-select: text;
+        color: #696969;
+    }
+
+    .team-adven {
+        display: flex;
+
+        li {
+            margin-right: 10px;
+            font-size: 14px;
+            padding: 7px;
+            border-radius: 7px;
+        }
+
+        li:nth-child(1n) {
+            background-color: #9162c025;
+            color: #9162c0;
+        }
+
+        li:nth-child(2n) {
+            background-color: #449d5d25;
+            color: #449d5d;
+        }
+
+        li:nth-child(3n) {
+            background-color: #d1772425;
+            color: #d17724;
+        }
+    }
+
+    .team-img {
+        max-width: 600px;
+        min-width: 600px;
+        margin-left: 60px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.working-field {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+
+    .working-img {
+        min-width: 600px;
+        max-width: 600px;
+        margin-right: 60px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .working-text {
+        h1, p {
+            margin-bottom: 20px;
+        }
+
+        p {
+            user-select: text;
+            color: #696969;
+        }
+
+        .working-btn {
+            display: flex;
+        }
+
+        a {
+            padding: 10px;
+            background-color: #6756ff;
+            color: #fff;
+            border-radius: 7px;
+            transition: .3s background-color;
+
+            &:hover {
+                background-color: #4b3cd4;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+}
+
+@media (max-width:1305px) {
+    .fullscreen {
+        .offer {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .fullscreen-content {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .fullscreen-img {
+            margin-left: 0;
+            max-width: 700px;
+            min-width: 0;
+        }
+    }
+
+    .stack {
+        flex-direction: column;
+        justify-content: center;
+    
+        .techs {
+            width: 100%;
+        }
+    
+        .stack-text {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:1100px) {
+    .actual {
+        flex-direction: column;
+        justify-content: center;
+
+        .actual-text {
+            text-align: center;
+        }
+
+        .actual-img {
+            min-width: 0;
+            margin-right: 0;
+            margin-bottom: 80px;
+        }
+    }
+
+    .about-learning {
+        flex-direction: column;
+        justify-content: center;
+    
+        .learning-img {
+            min-width: 0;
+            margin-left: 0;
+            margin-top: 80px;
+        }
+    
+        .learning-text {
+            text-align: center;
+        }
+    }
+
+    .team {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 200px;
+
+        .team-adven {
+            display: none;
+        }
+    
+        .team-img {
+            min-width: 0;
+            margin-left: 0;
+        }
+    }
+
+    .working-field {
+        flex-direction: column;
+    
+        .working-img {
+            margin-right: 0;
+            min-width: 0;
+        }
+    
+        .working-text {
+            text-align: center;
+            
+            a {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}

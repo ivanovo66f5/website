@@ -1,0 +1,42 @@
+footer {
+    margin-top: 200px;
+    padding: 20px;
+    background-color: #6756ff;
+    padding-bottom: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-columns {
+    display: flex;
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+
+        h3 {
+            color: #fff;
+        }
+
+        a {
+            color: #ddd;
+            transition: .3s color;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.copyright h3 {
+    color: #fff;
+}
